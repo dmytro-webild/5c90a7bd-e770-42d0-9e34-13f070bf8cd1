@@ -78,7 +78,7 @@ export default function LandingPage() {
         {
           text: "VIEW PRICES",          href: "#pricing"},
       ]}
-      imageSrc="http://img.b2bpic.net/free-photo/close-up-details-hairdresser-salon_23-2149205856.jpg"
+      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/uploaded-1778093237434-05qgab2c.jpg"
       imageAlt="Doc Barnet Luxury Salon"
       avatars={[
         {
