@@ -14,6 +14,8 @@ import ProductCardTwo from '@/components/sections/product/ProductCardTwo';
 import TestimonialCardSixteen from '@/components/sections/testimonial/TestimonialCardSixteen';
 
 export default function LandingPage() {
+  const bookingUrl = "https://www.fresha.com/book-now/doc-barnet-hair-studio-tzv4uhw7/all-offer?share=true&pId=2750001";
+
   return (
     <ThemeProvider
         defaultButtonVariant="text-shift"
@@ -42,7 +44,7 @@ export default function LandingPage() {
       ]}
       brandName="Doc Barnet Grooming Salon"
       button={{
-        text: "BOOK NOW",        href: "#contact"}}
+        text: "BOOK NOW",        href: bookingUrl}}
     />
   </div>
 
@@ -72,7 +74,7 @@ export default function LandingPage() {
       ]}
       buttons={[
         {
-          text: "BOOK NOW",          href: "#contact"},
+          text: "BOOK NOW",          href: bookingUrl},
         {
           text: "VIEW PRICES",          href: "#pricing"},
       ]}
@@ -149,7 +151,7 @@ export default function LandingPage() {
         {
           id: "p1",          badge: "Most Popular",          price: "£35",          subtitle: "Premium Haircut & Styling",          buttons: [
             {
-              text: "Book Now",              href: "#contact"},
+              text: "Book Now",              href: bookingUrl},
           ],
           features: [
             "Consultation",            "Precision Cut",            "Style Advice",            "Finish"],
@@ -157,7 +159,7 @@ export default function LandingPage() {
         {
           id: "p2",          badge: "Essential",          price: "£55",          subtitle: "Cut, Wash & Blow Dry",          buttons: [
             {
-              text: "Book Now",              href: "#contact"},
+              text: "Book Now",              href: bookingUrl},
           ],
           features: [
             "Head Massage",            "Professional Cut",            "Styling"],
@@ -165,7 +167,7 @@ export default function LandingPage() {
         {
           id: "p3",          badge: "Luxury",          price: "£85",          subtitle: "Balayage & Treatment",          buttons: [
             {
-              text: "Book Now",              href: "#contact"},
+              text: "Book Now",              href: bookingUrl},
           ],
           features: [
             "Consultation",            "Expert Colour",            "Treatment",            "Finish"],
@@ -295,7 +297,7 @@ export default function LandingPage() {
             {
               label: "Contact",              href: "#contact"},
             {
-              label: "Book Now",              href: "#contact"},
+              label: "Book Now",              href: bookingUrl},
           ],
         },
         {
