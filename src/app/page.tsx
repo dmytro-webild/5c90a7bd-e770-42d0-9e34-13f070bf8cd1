@@ -303,7 +303,7 @@ export default function LandingPage() {
         {
           title: "Social",          items: [
             {
-              label: "Instagram",              href: "#"},
+              label: "Instagram",              href: "https://www.instagram.com/docbarnet?igsh=MWMwdHBnamFibXc3Yw%3D%3D&utm_source=qr"},
             {
               label: "Facebook",              href: "#"},
             {
