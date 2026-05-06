@@ -6,6 +6,7 @@ import "@/lib/gsap-setup";
 import { ServiceWrapper } from "@/components/ServiceWrapper";
 import { getVisualEditScript } from "@/utils/visual-edit-script";
 import { Public_Sans } from "next/font/google";
+import { Roboto } from "next/font/google";
 
 
 
@@ -19,13 +20,11 @@ export const metadata: Metadata = {
   },
 };
 
-const publicSans = Public_Sans({
-  variable: "--font-public-sans",
+
+const roboto = Roboto({
+  variable: "--font-roboto",
   subsets: ["latin"],
-});
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
+  weight: ["100", "300", "400", "500", "700", "900"],
 });
 
 export default function RootLayout({
@@ -36,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <ServiceWrapper>
-        <body className={`${publicSans.variable} ${inter.variable} antialiased`}>
+        <body className={`${roboto.variable} antialiased`}>
           
           {children}
           <script
