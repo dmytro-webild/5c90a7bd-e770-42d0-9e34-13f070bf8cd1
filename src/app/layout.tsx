@@ -21,10 +21,10 @@ export const metadata: Metadata = {
 };
 
 
-const roboto = Roboto({
-  variable: "--font-roboto",
+
+const publicSans = Public_Sans({
+  variable: "--font-public-sans",
   subsets: ["latin"],
-  weight: ["100", "300", "400", "500", "700", "900"],
 });
 
 export default function RootLayout({
@@ -35,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <ServiceWrapper>
-        <body className={`${roboto.variable} antialiased`}>
+        <body className={`${publicSans.variable} antialiased`}>
           
           {children}
           <script
