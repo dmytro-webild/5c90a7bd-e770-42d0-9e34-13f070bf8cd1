@@ -40,8 +40,7 @@ export default function LandingPage() {
         {
           name: "Contact",          id: "contact"},
       ]}
-      brandName="DOC BARNET"
-      logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/uploaded-1778085314330-0z5ji9s5.jpg"
+      brandName="Doc Barnet Grooming Salon"
       button={{
         text: "BOOK NOW",        href: "#contact"}}
     />
