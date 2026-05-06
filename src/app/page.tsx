@@ -149,7 +149,7 @@ export default function LandingPage() {
       useInvertedBackground={false}
       plans={[
         {
-          id: "p1",          badge: "Most Popular",          price: "£35",          subtitle: "Premium Haircut & Styling",          buttons: [
+          id: "p1",          badge: "Most Popular",          price: "£19.99",          subtitle: "Premium Haircut & Styling",          buttons: [
             {
               text: "Book Now",              href: bookingUrl},
           ],
@@ -157,7 +157,7 @@ export default function LandingPage() {
             "Consultation",            "Precision Cut",            "Style Advice",            "Finish"],
         },
         {
-          id: "p2",          badge: "Essential",          price: "£55",          subtitle: "Cut, Wash & Blow Dry",          buttons: [
+          id: "p2",          badge: "Essential",          price: "£45",          subtitle: "Cut, Wash & Blow Dry",          buttons: [
             {
               text: "Book Now",              href: bookingUrl},
           ],
