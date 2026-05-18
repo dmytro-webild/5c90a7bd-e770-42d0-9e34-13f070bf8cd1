@@ -11,8 +11,8 @@ import { Roboto } from "next/font/google";
 
 
 export const metadata: Metadata = {
-  title: 'Doc Barnet | Premium Grooming Salon Gloucester',
-  description: 'Experience premium barbering, ladies hair, and grooming at Doc Barnet Gloucester Quays. Now open.',
+  title: "Doc Barnet Grooming Salon | Premium Barber & Hair Salon Gloucester Quays",
+  description: "Luxury barbering, ladies hair, skin fades, beard grooming, and modern hair styling at Doc Barnet Grooming Salon in Gloucester Quays. EST. 2007. Book online today.",
   openGraph: {
     "title": "Doc Barnet Grooming Salon",
     "siteName": "Doc Barnet",
