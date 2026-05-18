@@ -41,7 +41,9 @@ export default function LandingPage() {
           name: "Prices",          id: "pricing"},
         {
           name: "Contact",          id: "contact"},
-      ]}
+      
+          { name: "Blog", id: "/blog" },
+]}
       brandName="Doc Barnet Grooming Salon"
       button={{
         text: "BOOK NOW",        href: bookingUrl}}
