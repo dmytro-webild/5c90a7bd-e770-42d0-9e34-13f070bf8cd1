@@ -82,13 +82,13 @@ export default function LandingPage() {
       imageAlt="Doc Barnet Luxury Salon"
       avatars={[
         {
-          src: "http://img.b2bpic.net/free-photo/shaving-process-small-dog-sits-table-dog-shaved-by-professional_1157-48807.jpg",          alt: "Shaving process"},
+          src: "https://img.b2bpic.net/free-photo/high-fashion-portrait-young-elegant-blonde-woman-black-wool-hat-wearing-oversize-white-fringe-poncho-with-long-grey-dress_273443-3799.jpg?id=11195909",          alt: "Shaving process"},
         {
-          src: "http://img.b2bpic.net/free-photo/haircuting-process-small-dog-sits-table-dog-with-professional_1157-48820.jpg",          alt: "Haircut process"},
+          src: "https://img.b2bpic.net/free-photo/fashion-studio-image-two-young-women-stylish-casual-spring-outfit-having-fun-show-tongue-bright-trendy-colors-stylish-hairstyle-with-buns-cool-sunglasses-friends-portrait_273443-1142.jpg?id=9331369",          alt: "Haircut process"},
         {
-          src: "http://img.b2bpic.net/free-photo/person-creating-online-content-with-their-pets_23-2151420269.jpg",          alt: "Creative content"},
+          src: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/uploaded-1779125338765-fdbqo198.jpg",          alt: "Creative content"},
         {
-          src: "http://img.b2bpic.net/free-photo/washing-process-small-dog-sits-table-dog-spaying-by-professional_1157-48817.jpg",          alt: "Washing process"},
+          src: "https://img.b2bpic.net/free-photo/three-young-beautiful-smiling-girls-trendy-summer-casual-jeans-clothes-sexy-carefree-women-posing-positive-models-sunglasses_158538-4730.jpg?id=6601657",          alt: "Washing process"},
         {
           src: "http://img.b2bpic.net/free-photo/handsome-afro-american-traveler-brown-jacket-hat-with-backpack-stands-studio-isolated-dark-background_613910-6586.jpg",          alt: "Stylish traveler"},
       ]}
@@ -133,7 +133,7 @@ export default function LandingPage() {
         {
           title: "Gents Haircuts",          description: "Precision styling tailored to your unique look.",          imageSrc: "http://img.b2bpic.net/free-photo/studio-portrait-fashionable-modern-male-grey-t-shirt_613910-532.jpg",          imageAlt: "Gents Haircut"},
         {
-          title: "Ladies Styling",          description: "Wash, cut, and blow dry services for sophisticated style.",          imageSrc: "http://img.b2bpic.net/free-photo/woman-with-hairdryer-hairbrush_1385-2900.jpg",          imageAlt: "Ladies Styling"},
+          title: "Ladies Styling",          description: "Wash, cut, and blow dry services for sophisticated style.",          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/tmp/hairstyle-holding-hair-drayer-1779125588683-ef4b646b.png",          imageAlt: "Ladies Styling"},
         {
           title: "Beard & Facial",          description: "Expert beard shaping, hot towel shaves, and facial treatments.",          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/tmp/beard-facial-expert-beard-shaping-hot-to-1778093777491-f883e38f.png",          imageAlt: "Facial treatment"},
       ]}
@@ -251,7 +251,7 @@ export default function LandingPage() {
         variant: "gradient-bars"}}
       tag="LIMITED OFFER"
       title="20% OFF YOUR FIRST VISIT"
-      description="Join our club and enjoy premium grooming at a special introductory rate."
+      description="TUSDAY ONLY CODE: DOCBARNET20 "
     />
   </div>
 
