@@ -14,7 +14,7 @@ import ProductCardTwo from '@/components/sections/product/ProductCardTwo';
 import TestimonialCardSixteen from '@/components/sections/testimonial/TestimonialCardSixteen';
 
 export default function LandingPage() {
-  const bookingUrl = "https://www.fresha.com/book-now/doc-barnet-hair-studio-tzv4uhw7/all-offer?share=true&pId=2750001";
+  const bookingUrl = "https://tinyurl.com/2kr8jy37";
 
   return (
     <ThemeProvider
