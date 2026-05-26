@@ -40,6 +40,8 @@ export default function LandingPage() {
         {
           name: "Prices",          id: "pricing"},
         {
+          name: "Franchise",          id: "/franchise"},
+        {
           name: "Contact",          id: "contact"},
       
           { name: "Blog", id: "/blog" },
@@ -65,14 +67,11 @@ export default function LandingPage() {
           name: "Sophie M.",          handle: "@sophiem",          testimonial: "Amazing Balayage treatment, truly premium experience.",          rating: 5,
           imageSrc: "http://img.b2bpic.net/free-photo/attractive-woman-dark-wall_329181-7280.jpg"},
         {
-          name: "Mark D.",          handle: "@markd",          testimonial: "The attention to detail on the fade was spot on. 5 stars.",          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/handsome-bearded-man-barbershop-barber-work_627829-7351.jpg"},
+          name: "Mark D.",          handle: "@markd",          testimonial: "The attention to detail on the fade was spot on. 5 stars.",          imageSrc: "http://img.b2bpic.net/free-photo/handsome-bearded-man-barbershop-barber-work_627829-7351.jpg"},
         {
-          name: "Elena P.",          handle: "@elenap",          testimonial: "Professional, welcoming, and perfectly styled. Highly recommend.",          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/medium-shot-woman-with-dandruff-looking-mirror_23-2149311387.jpg"},
+          name: "Elena P.",          handle: "@elenap",          testimonial: "Professional, welcoming, and perfectly styled. Highly recommend.",          imageSrc: "http://img.b2bpic.net/free-photo/medium-shot-woman-with-dandruff-looking-mirror_23-2149311387.jpg"},
         {
-          name: "Chris W.",          handle: "@chrisw",          testimonial: "Classic barbering with a modern, luxury edge. Exceptional.",          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/stylish-room-with-blurred-effect_1203-554.jpg"},
+          name: "Chris W.",          handle: "@chrisw",          testimonial: "Classic barbering with a modern, luxury edge. Exceptional.",          imageSrc: "http://img.b2bpic.net/free-photo/stylish-room-with-blurred-effect_1203-554.jpg"},
       ]}
       buttons={[
         {
