@@ -7,32 +7,7 @@ import { useBlogPosts } from "@/hooks/useBlogPosts";
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
 import FooterMedia from '@/components/sections/footer/FooterMedia';
 
-const footerColumns: FooterColumn[] = [
-    {
-        title: "Product",
-        items: [
-            { label: "Features", href: "/features" },
-            { label: "Pricing", href: "/pricing" },
-            { label: "FAQ", href: "/faq" },
-        ],
-    },
-    {
-        title: "Company",
-        items: [
-            { label: "About", href: "/about" },
-            { label: "Blog", href: "/blog" },
-            { label: "Careers", href: "/careers" },
-        ],
-    },
-    {
-        title: "Resources",
-        items: [
-            { label: "Documentation", href: "/docs" },
-            { label: "Support", href: "/support" },
-            { label: "Contact", href: "/contact" },
-        ],
-    },
-];
+const bookingUrl = "/contact";
 
 export default function BlogPage() {
     const { posts, isLoading } = useBlogPosts();
