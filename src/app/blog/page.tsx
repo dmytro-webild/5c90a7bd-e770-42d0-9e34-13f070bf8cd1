@@ -7,8 +7,8 @@ import { useBlogPosts } from "@/hooks/useBlogPosts";
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
 import FooterMedia from '@/components/sections/footer/FooterMedia';
 
-const bookingUrl = "/contact";
-const franchisePagePath = "/franchise-doc-barnet-grooming-salon";
+const bookingUrl = "https://tinyurl.com/2kr8jy37";
+const franchisePagePath = "/franchise";
 
 export default function BlogPage() {
     const { posts, isLoading } = useBlogPosts();
@@ -31,7 +31,7 @@ export default function BlogPage() {
         {
           name: "Home",          id: "/"},
         {
-          name: "Services",          id: "/#services"},
+          name: "Services",          id: "/services"},
         {
           name: "Prices",          id: "/#pricing"},
         {
@@ -73,11 +73,11 @@ export default function BlogPage() {
         {
           title: "Services",          items: [
             {
-              label: "Gents Hair",              href: "/#services"},
+              label: "Gents Hair",              href: "/services"},
             {
-              label: "Ladies Cut",              href: "/#services"},
+              label: "Ladies Cut",              href: "/services"},
             {
-              label: "Beard Grooming",              href: "/#services"},
+              label: "Beard Grooming",              href: "/services"},
           ],
         },
         {
@@ -88,6 +88,8 @@ export default function BlogPage() {
               label: "Contact",              href: "/#contact"},
             {
               label: "Book Now",              href: bookingUrl},
+            {
+              label: "Blog",              href: "/blog"},
             {
               label: "Franchise",              href: franchisePagePath},
           ],
