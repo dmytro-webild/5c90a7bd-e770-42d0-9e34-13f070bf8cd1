@@ -27,15 +27,15 @@ export default function FranchisePage() {
             <NavbarLayoutFloatingOverlay
             navItems={[
                 {
-                    name: "Home",                    id: "hero"},
+                    name: "Home",                    id: "/"},
                 {
-                    name: "Services",                    id: "services"},
+                    name: "Services",                    id: "/services"},
                 {
-                    name: "Prices",                    id: "pricing"},
+                    name: "Prices",                    id: "/#pricing"},
                 {
                     name: "Franchise",                    id: "/franchise"},
                 {
-                    name: "Contact",                    id: "contact"},
+                    name: "Contact",                    id: "/#contact"},
               
                     { name: "Blog", id: "/blog" },
             ]}
@@ -73,21 +73,25 @@ export default function FranchisePage() {
                 {
                     title: "Services",                    items: [
                         {
-                            label: "Gents Hair",                            href: "#services"},
+                            label: "Gents Hair",                            href: "/services"},
                         {
-                            label: "Ladies Cut",                            href: "#services"},
+                            label: "Ladies Cut",                            href: "/services"},
                         {
-                            label: "Beard Grooming",                            href: "#services"},
+                            label: "Beard Grooming",                            href: "/services"},
                     ],
                 },
                 {
                     title: "Company",                    items: [
                         {
-                            label: "About Us",                            href: "#about"},
+                            label: "About Us",                            href: "/#about"},
                         {
-                            label: "Contact",                            href: "#contact"},
+                            label: "Contact",                            href: "/#contact"},
                         {
                             label: "Book Now",                            href: bookingUrl},
+                        {
+                            label: "Blog",                            href: "/blog"},
+                        {
+                            label: "Franchise",                            href: "/franchise"},
                     ],
                 },
                 {
