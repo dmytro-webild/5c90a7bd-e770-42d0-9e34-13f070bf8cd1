@@ -67,7 +67,7 @@ export default function FranchisePage() {
 
         <div id="footer" data-section="footer">
             <FooterMedia
-            imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/uploaded-1778094604107-kwe3q62f.jpg"
+            imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/uploaded-1778094604107-kwe3q62f.jpg?_wi=2"
             logoText="DOC BARNET"
             columns={[
                 {
