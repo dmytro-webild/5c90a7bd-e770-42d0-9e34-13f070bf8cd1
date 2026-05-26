@@ -29,18 +29,18 @@ export default function BlogPage() {
 
                     <NavbarLayoutFloatingOverlay navItems={[
         {
-          name: "Home",          href: "/"},
+          name: "Home",          id: "/"},
         {
-          name: "Services",          href: "/#services"},
+          name: "Services",          id: "/#services"},
         {
-          name: "Prices",          href: "/#pricing"},
+          name: "Prices",          id: "/#pricing"},
         {
-          name: "Contact",          href: "/#contact"},
+          name: "Contact",          id: "/#contact"},
       
           {
-            name: "Blog",            href: "/blog"},
+            name: "Blog",            id: "/blog"},
           {
-            name: "Franchise",            href: franchisePagePath},
+            name: "Franchise",            id: franchisePagePath},
 ]}
       brandName="Doc Barnet Grooming Salon"
       button={{
