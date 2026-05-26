@@ -8,6 +8,7 @@ import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatin
 import FooterMedia from '@/components/sections/footer/FooterMedia';
 
 const bookingUrl = "/contact";
+const franchisePagePath = "/franchise-doc-barnet-grooming-salon";
 
 export default function BlogPage() {
     const { posts, isLoading } = useBlogPosts();
@@ -28,14 +29,19 @@ export default function BlogPage() {
 
                     <NavbarLayoutFloatingOverlay navItems={[
         {
-          name: "Home",          id: "hero"},
+          name: "Home",          href: "/"},
         {
-          name: "Services",          id: "services"},
+          name: "Services",          href: "/#services"},
         {
-          name: "Prices",          id: "pricing"},
+          name: "Prices",          href: "/#pricing"},
         {
-          name: "Contact",          id: "contact"},
-      ]}
+          name: "Contact",          href: "/#contact"},
+      
+          {
+            name: "Blog",            href: "/blog"},
+          {
+            name: "Franchise",            href: franchisePagePath},
+]}
       brandName="Doc Barnet Grooming Salon"
       button={{
         text: "BOOK NOW",        href: bookingUrl}} />
@@ -67,21 +73,23 @@ export default function BlogPage() {
         {
           title: "Services",          items: [
             {
-              label: "Gents Hair",              href: "#services"},
+              label: "Gents Hair",              href: "/#services"},
             {
-              label: "Ladies Cut",              href: "#services"},
+              label: "Ladies Cut",              href: "/#services"},
             {
-              label: "Beard Grooming",              href: "#services"},
+              label: "Beard Grooming",              href: "/#services"},
           ],
         },
         {
           title: "Company",          items: [
             {
-              label: "About Us",              href: "#about"},
+              label: "About Us",              href: "/#about"},
             {
-              label: "Contact",              href: "#contact"},
+              label: "Contact",              href: "/#contact"},
             {
               label: "Book Now",              href: bookingUrl},
+            {
+              label: "Franchise",              href: franchisePagePath},
           ],
         },
         {
@@ -100,4 +108,3 @@ export default function BlogPage() {
         </ThemeProvider>
     );
 }
-
