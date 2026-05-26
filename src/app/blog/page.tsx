@@ -67,7 +67,7 @@ export default function BlogPage() {
 
                     <div id="footer" data-section="footer">
 
-                        <FooterMedia imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/uploaded-1778094604107-kwe3q62f.jpg"
+                        <FooterMedia imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/uploaded-1778094604107-kwe3q62f.jpg?_wi=1"
       logoText="DOC BARNET"
       columns={[
         {
