@@ -9,6 +9,43 @@ import FooterMedia from '@/components/sections/footer/FooterMedia';
 export default function FranchisePage() {
   const bookingUrl = "https://tinyurl.com/2kr8jy37";
 
+  const navItems = [
+    { name: "Home", id: "/" },
+    { name: "Services", id: "/services" },
+    { name: "Products", id: "/products" },
+    { name: "Prices", id: "/#pricing" },
+    { name: "Franchise", id: "/franchise" },
+    { name: "Blog", id: "/blog" },
+    { name: "Contact", id: "/#contact" },
+  ];
+
+  const footerColumns = [
+    {
+      title: "Services",      items: [
+        { label: "Gents Hair", href: "/services" },
+        { label: "Ladies Cut", href: "/services" },
+        { label: "Beard Grooming", href: "/services" },
+      ],
+    },
+    {
+      title: "Company",      items: [
+        { label: "About Us", href: "/#about" },
+        { label: "Contact", href: "/#contact" },
+        { label: "Book Now", href: bookingUrl },
+        { label: "Products", href: "/products" },
+        { label: "Blog", href: "/blog" },
+        { label: "Franchise", href: "/franchise" },
+      ],
+    },
+    {
+      title: "Social",      items: [
+        { label: "Instagram", href: "https://www.instagram.com/docbarnet?igsh=MWMwdHBnamFibXc3Yw%3D%3D&utm_source=qr" },
+        { label: "Facebook", href: "#" },
+        { label: "Privacy Policy", href: "#" },
+      ],
+    },
+  ];
+
   return (
     <ThemeProvider
         defaultButtonVariant="text-shift"
@@ -25,20 +62,7 @@ export default function FranchisePage() {
       <ReactLenis root>
         <div id="nav" data-section="nav">
             <NavbarLayoutFloatingOverlay
-            navItems={[
-                {
-                    name: "Home",                    id: "/"},
-                {
-                    name: "Services",                    id: "/services"},
-                {
-                    name: "Prices",                    id: "/#pricing"},
-                {
-                    name: "Franchise",                    id: "/franchise"},
-                {
-                    name: "Contact",                    id: "/#contact"},
-              
-                    { name: "Blog", id: "/blog" },
-            ]}
+            navItems={navItems}
             brandName="Doc Barnet Grooming Salon"
             button={{
                 text: "BOOK NOW",                href: bookingUrl}}
@@ -69,42 +93,7 @@ export default function FranchisePage() {
             <FooterMedia
             imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/uploaded-1778094604107-kwe3q62f.jpg?_wi=1"
             logoText="DOC BARNET"
-            columns={[
-                {
-                    title: "Services",                    items: [
-                        {
-                            label: "Gents Hair",                            href: "/services"},
-                        {
-                            label: "Ladies Cut",                            href: "/services"},
-                        {
-                            label: "Beard Grooming",                            href: "/services"},
-                    ],
-                },
-                {
-                    title: "Company",                    items: [
-                        {
-                            label: "About Us",                            href: "/#about"},
-                        {
-                            label: "Contact",                            href: "/#contact"},
-                        {
-                            label: "Book Now",                            href: bookingUrl},
-                        {
-                            label: "Blog",                            href: "/blog"},
-                        {
-                            label: "Franchise",                            href: "/franchise"},
-                    ],
-                },
-                {
-                    title: "Social",                    items: [
-                        {
-                            label: "Instagram",                            href: "https://www.instagram.com/docbarnet?igsh=MWMwdHBnamFibXc3Yw%3D%3D&utm_source=qr"},
-                        {
-                            label: "Facebook",                            href: "#"},
-                        {
-                            label: "Privacy Policy",                            href: "#"},
-                    ],
-                },
-            ]}
+            columns={footerColumns}
             />
         </div>
       </ReactLenis>
