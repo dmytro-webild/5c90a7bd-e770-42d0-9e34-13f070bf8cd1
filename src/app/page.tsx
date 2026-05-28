@@ -59,7 +59,7 @@ export default function LandingPage() {
       background={{
         variant: "gradient-bars"}}
       title="Experience Our Full Range of Premium Grooming Services"
-      description="From precision gents haircuts and elegant ladies styling to expert beard grooming and rejuvenating facial treatments, discover unparalleled quality and care at Doc Barnet Grooming Salon."
+      description="From precision gentlemen's haircuts and elegant ladies' styling to expert beard grooming and rejuvenating facial treatments, discover unparalleled quality and care at Doc Barnet Grooming Salon."
       buttons={[
         {
           text: "BOOK NOW",          href: bookingUrl},
