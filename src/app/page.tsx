@@ -54,7 +54,6 @@ export default function LandingPage() {
 
   <div id="hero" data-section="hero">
       <HeroBillboardScroll
-      useInvertedBackground={false}
       background={{
         variant: "gradient-bars"}}
       title="Experience Our Full Range of Premium Grooming Services"
