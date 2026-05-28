@@ -38,14 +38,16 @@ export default function LandingPage() {
         {
           name: "Services",          id: "/services"},
         {
+          name: "Products",          id: "/products"},
+        {
           name: "Prices",          id: "/#pricing"},
         {
           name: "Franchise",          id: "/franchise"},
         {
-          name: "Contact",          id: "/#contact"},
-      
-          { name: "Blog", id: "/blog" },
-]}
+          name: "Blog", id: "/blog" },
+        {
+          name: "Contact",          id: "/#contact"}
+      ]}
       brandName="Doc Barnet Grooming Salon"
       button={{
         text: "BOOK NOW",        href: bookingUrl}}
@@ -260,6 +262,8 @@ export default function LandingPage() {
               label: "Contact",              href: "/#contact"},
             {
               label: "Book Now",              href: bookingUrl},
+            {
+              label: "Products",              href: "/products"},
             {
               label: "Blog",              href: "/blog"},
             {
