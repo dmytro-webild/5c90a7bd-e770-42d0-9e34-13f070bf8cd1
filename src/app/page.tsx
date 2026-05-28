@@ -139,7 +139,7 @@ export default function LandingPage() {
         {
           title: "Ladies Styling",          description: "Wash, cut, and blow dry services for sophisticated style.",          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/tmp/hairstyle-holding-hair-drayer-1779125588683-ef4b646b.png",          imageAlt: "Ladies Styling"},
         {
-          title: "Beard & Facial",          description: "Expert beard shaping, hot towel shaves, and facial treatments.",          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/uploaded-1779127917991-ff4pbcfh.jpg",          imageAlt: "Facial treatment"},
+          title: "Beard & Facial",          description: "Expert beard shaping, hot towel shaves, and facial treatments.",          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/uploaded-1779125338765-fdbqo198.jpg",          imageAlt: "Facial treatment"},
       ]}
       title="PREMIUM SERVICES"
       description="Comprehensive grooming and hair solutions for gentlemen and ladies."
