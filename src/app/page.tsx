@@ -6,7 +6,7 @@ import ContactCenter from '@/components/sections/contact/ContactCenter';
 import FaqSplitMedia from '@/components/sections/faq/FaqSplitMedia';
 import FeatureCardOne from '@/components/sections/feature/FeatureCardOne';
 import FooterMedia from '@/components/sections/footer/FooterMedia';
-import HeroBillboardTestimonial from '@/components/sections/hero/HeroBillboardTestimonial';
+import HeroBillboardScroll from '@/components/sections/hero/HeroBillboardScroll';
 import InlineImageSplitTextAbout from '@/components/sections/about/InlineImageSplitTextAbout';
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
 import PricingCardTwo from '@/components/sections/pricing/PricingCardTwo';
@@ -34,15 +34,15 @@ export default function LandingPage() {
       <NavbarLayoutFloatingOverlay
       navItems={[
         {
-          name: "Home",          id: "hero"},
+          name: "Home",          id: "/"},
         {
-          name: "Services",          id: "services"},
+          name: "Services",          id: "/services"},
         {
-          name: "Prices",          id: "pricing"},
+          name: "Prices",          id: "/#pricing"},
         {
           name: "Franchise",          id: "/franchise"},
         {
-          name: "Contact",          id: "contact"},
+          name: "Contact",          id: "/#contact"},
       
           { name: "Blog", id: "/blog" },
 ]}
@@ -53,61 +53,20 @@ export default function LandingPage() {
   </div>
 
   <div id="hero" data-section="hero">
-      <HeroBillboardTestimonial
+      <HeroBillboardScroll
       useInvertedBackground={false}
       background={{
         variant: "gradient-bars"}}
-      title="NOW OPEN AT GLOUCESTER QUAYS"
-      description="Premium Grooming. Expert Styling. Experience the pinnacle of grooming excellence."
-      testimonials={[
-        {
-          name: "James R.",          handle: "@jamesr",          testimonial: "Best haircut I've had in years. Professional and high quality.",          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/portriat-beautiful-business-woman-standing_23-2148317282.jpg"},
-        {
-          name: "Sophie M.",          handle: "@sophiem",          testimonial: "Amazing Balayage treatment, truly premium experience.",          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/attractive-woman-dark-wall_329181-7280.jpg"},
-        {
-          name: "Mark D.",          handle: "@markd",          testimonial: "The attention to detail on the fade was spot on. 5 stars.",          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/handsome-bearded-man-barbershop-barber-work_627829-7351.jpg"},
-        {
-          name: "Elena P.",          handle: "@elenap",          testimonial: "Professional, welcoming, and perfectly styled. Highly recommend.",          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/medium-shot-woman-with-dandruff-looking-mirror_23-2149311387.jpg"},
-        {
-          name: "Chris W.",          handle: "@chrisw",          testimonial: "Classic barbering with a modern, luxury edge. Exceptional.",          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/stylish-room-with-blurred-effect_1203-554.jpg"},
-      ]}
+      title="Experience Our Full Range of Premium Grooming Services"
+      description="From precision gents haircuts and elegant ladies styling to expert beard grooming and rejuvenating facial treatments, discover unparalleled quality and care at Doc Barnet Grooming Salon."
       buttons={[
         {
           text: "BOOK NOW",          href: bookingUrl},
         {
-          text: "VIEW PRICES",          href: "#pricing"},
+          text: "VIEW SERVICES",          href: "#services"},
       ]}
       imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/uploaded-1778093237434-05qgab2c.jpg"
       imageAlt="Doc Barnet Luxury Salon"
-      avatars={[
-        {
-          src: "https://img.b2bpic.net/free-photo/high-fashion-portrait-young-elegant-blonde-woman-black-wool-hat-wearing-oversize-white-fringe-poncho-with-long-grey-dress_273443-3799.jpg?id=11195909",          alt: "Shaving process"},
-        {
-          src: "https://img.b2bpic.net/free-photo/fashion-studio-image-two-young-women-stylish-casual-spring-outfit-having-fun-show-tongue-bright-trendy-colors-stylish-hairstyle-with-buns-cool-sunglasses-friends-portrait_273443-1142.jpg?id=9331369",          alt: "Haircut process"},
-        {
-          src: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/uploaded-1779125338765-fdbqo198.jpg",          alt: "Creative content"},
-        {
-          src: "https://img.b2bpic.net/free-photo/three-young-beautiful-smiling-girls-trendy-summer-casual-jeans-clothes-sexy-carefree-women-posing-positive-models-sunglasses_158538-4730.jpg?id=6601657",          alt: "Washing process"},
-        {
-          src: "http://img.b2bpic.net/free-photo/handsome-afro-american-traveler-brown-jacket-hat-with-backpack-stands-studio-isolated-dark-background_613910-6586.jpg",          alt: "Stylish traveler"},
-      ]}
-      marqueeItems={[
-        {
-          type: "text",          text: "PRECISION CUTS"},
-        {
-          type: "text",          text: "LUXURY COLOR"},
-        {
-          type: "text",          text: "EXPERT STYLING"},
-        {
-          type: "text",          text: "PREMIUM BEARD"},
-        {
-          type: "text",          text: "MODERN SALON"},
-      ]}
     />
   </div>
 
@@ -281,27 +240,31 @@ export default function LandingPage() {
 
   <div id="footer" data-section="footer">
       <FooterMedia
-      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/uploaded-1778094604107-kwe3q62f.jpg"
+      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/uploaded-1778094604107-kwe3q62f.jpg?_wi=1"
       logoText="DOC BARNET"
       columns={[
         {
           title: "Services",          items: [
             {
-              label: "Gents Hair",              href: "#services"},
+              label: "Gents Hair",              href: "/services"},
             {
-              label: "Ladies Cut",              href: "#services"},
+              label: "Ladies Cut",              href: "/services"},
             {
-              label: "Beard Grooming",              href: "#services"},
+              label: "Beard Grooming",              href: "/services"},
           ],
         },
         {
           title: "Company",          items: [
             {
-              label: "About Us",              href: "#about"},
+              label: "About Us",              href: "/#about"},
             {
-              label: "Contact",              href: "#contact"},
+              label: "Contact",              href: "/#contact"},
             {
               label: "Book Now",              href: bookingUrl},
+            {
+              label: "Blog",              href: "/blog"},
+            {
+              label: "Franchise",              href: "/franchise"},
           ],
         },
         {

@@ -1,7 +1,7 @@
 "use client";
 
 import ReactLenis from "lenis/react";
-import BlogCardOne from "@/components/sections/blog/BlogCardOne";
+import BlogCardOne from '@/components/sections/blog/BlogCardOne';
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import { useBlogPosts } from "@/hooks/useBlogPosts";
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
