@@ -33,38 +33,27 @@ export default function LandingPage() {
   <div id="nav" data-section="nav">
       <NavbarLayoutFloatingOverlay
       navItems={[
-        {
-          name: "Home",          id: "/"},
-        {
-          name: "Services",          id: "/services"},
-        {
-          name: "Products",          id: "/products"},
-        {
-          name: "Prices",          id: "/#pricing"},
-        {
-          name: "Franchise",          id: "/franchise"},
-        {
-          name: "Blog", id: "/blog" },
-        {
-          name: "Contact",          id: "/#contact"}
+        { name: "Home", id: "/" },
+        { name: "Services", id: "/services" },
+        { name: "Products", id: "/products" },
+        { name: "Prices", id: "/#pricing" },
+        { name: "Franchise", id: "/franchise" },
+        { name: "Blog", id: "/blog" },
+        { name: "Contact", id: "/#contact" }
       ]}
       brandName="Doc Barnet Grooming Salon"
-      button={{
-        text: "BOOK NOW",        href: bookingUrl}}
+      button={{ text: "BOOK NOW", href: bookingUrl }}
     />
   </div>
 
   <div id="hero" data-section="hero">
       <HeroBillboardScroll
-      background={{
-        variant: "gradient-bars"}}
+      background={{ variant: "gradient-bars" }}
       title="Experience Our Full Range of Premium Grooming Services"
-      description="From precision gentlemen's haircuts and elegant ladies' styling to expert beard grooming and rejuvenating facial treatments, discover unparalleled quality and care          at Doc Barnet Grooming Salon."
+      description="From precision gentlemen's haircuts and elegant ladies' styling to expert beard grooming and rejuvenating facial treatments, discover unparalleled quality and care at Doc Barnet Grooming Salon."
       buttons={[
-        {
-          text: "BOOK NOW",          href: bookingUrl},
-        {
-          text: "VIEW SERVICES",          href: "#services"},
+        { text: "BOOK NOW", href: bookingUrl },
+        { text: "VIEW SERVICES", href: "#services" },
       ]}
       imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/uploaded-1778093237434-05qgab2c.jpg"
       imageAlt="Doc Barnet Luxury Salon"
@@ -75,14 +64,11 @@ export default function LandingPage() {
       <InlineImageSplitTextAbout
       useInvertedBackground={false}
       heading={[
-        {
-          type: "text",          content: "THE DOC BARNET EXPERIENCE"},
-        {
-          type: "image",          src: "http://img.b2bpic.net/free-photo/barber-applying-cream-clients-beard_107420-94778.jpg",          alt: "Barber at work"},
+        { type: "text", content: "THE DOC BARNET EXPERIENCE" },
+        { type: "image", src: "http://img.b2bpic.net/free-photo/barber-applying-cream-clients-beard_107420-94778.jpg", alt: "Barber at work" },
       ]}
       buttons={[
-        {
-          text: "DISCOVER MORE",          href: "#services"},
+        { text: "DISCOVER MORE", href: "#services" },
       ]}
     />
   </div>
@@ -94,12 +80,9 @@ export default function LandingPage() {
       gridVariant="two-columns-alternating-heights"
       useInvertedBackground={false}
       features={[
-        {
-          title: "Gents Haircuts",          description: "Precision styling tailored to your unique look.",          imageSrc: "http://img.b2bpic.net/free-photo/studio-portrait-fashionable-modern-male-grey-t-shirt_613910-532.jpg",          imageAlt: "Gents Haircut"},
-        {
-          title: "Ladies Styling",          description: "Wash, cut, and blow dry services for sophisticated style.",          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/tmp/hairstyle-holding-hair-drayer-1779125588683-ef4b646b.png",          imageAlt: "Ladies Styling"},
-        {
-          title: "Beard & Facial",          description: "Expert beard shaping, hot towel shaves, and facial treatments.",          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/uploaded-1779125338765-fdbqo198.jpg",          imageAlt: "Facial treatment"},
+        { title: "Gents Haircuts", description: "Precision styling tailored to your unique look.", imageSrc: "http://img.b2bpic.net/free-photo/studio-portrait-fashionable-modern-male-grey-t-shirt_613910-532.jpg", imageAlt: "Gents Haircut" },
+        { title: "Ladies Styling", description: "Wash, cut, and blow dry services for sophisticated style.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/tmp/hairstyle-holding-hair-drayer-1779125588683-ef4b646b.png", imageAlt: "Ladies Styling" },
+        { title: "Beard & Facial", description: "Expert beard shaping, hot towel shaves, and facial treatments.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/uploaded-1779125338765-fdbqo198.jpg", imageAlt: "Facial treatment" },
       ]}
       title="PREMIUM SERVICES"
       description="Comprehensive grooming and hair solutions for gentlemen and ladies."
@@ -112,30 +95,9 @@ export default function LandingPage() {
       textboxLayout="default"
       useInvertedBackground={false}
       plans={[
-        {
-          id: "p1",          badge: "Most Popular",          price: "£19.99",          subtitle: "Premium Haircut & Styling",          buttons: [
-            {
-              text: "Book Now",              href: bookingUrl},
-          ],
-          features: [
-            "Consultation",            "Precision Cut",            "Style Advice",            "Finish"],
-        },
-        {
-          id: "p2",          badge: "Essential",          price: "£45",          subtitle: "Cut, Wash & Blow Dry",          buttons: [
-            {
-              text: "Book Now",              href: bookingUrl},
-          ],
-          features: [
-            "Head Massage",            "Professional Cut",            "Styling"],
-        },
-        {
-          id: "p3",          badge: "Luxury",          price: "£85",          subtitle: "Balayage & Treatment",          buttons: [
-            {
-              text: "Book Now",              href: bookingUrl},
-          ],
-          features: [
-            "Consultation",            "Expert Colour",            "Treatment",            "Finish"],
-        },
+        { id: "p1", badge: "Most Popular", price: "£19.99", subtitle: "Premium Haircut & Styling", buttons: [{ text: "Book Now", href: bookingUrl }], features: ["Consultation", "Precision Cut", "Style Advice", "Finish"] },
+        { id: "p2", badge: "Essential", price: "£45", subtitle: "Cut, Wash & Blow Dry", buttons: [{ text: "Book Now", href: bookingUrl }], features: ["Head Massage", "Professional Cut", "Styling"] },
+        { id: "p3", badge: "Luxury", price: "£85", subtitle: "Balayage & Treatment", buttons: [{ text: "Book Now", href: bookingUrl }], features: ["Consultation", "Expert Colour", "Treatment", "Finish"] },
       ]}
       title="PRICE LIST"
       description="Transparent pricing for world-class grooming."
@@ -149,24 +111,12 @@ export default function LandingPage() {
       gridVariant="four-items-2x2-equal-grid"
       useInvertedBackground={false}
       products={[
-        {
-          id: "g1",          name: "Classic Fade",          brand: "MEN",          price: "Transformation",          rating: 5,
-          reviewCount: "",          imageSrc: "http://img.b2bpic.net/free-photo/portrait-stylish-male-who-himself-shaving-while-sitting-barber-chair-hairdressing-salon_613910-18649.jpg"},
-        {
-          id: "g2",          name: "Balayage",          brand: "COLOUR",          price: "Transformation",          rating: 5,
-          reviewCount: "",          imageSrc: "http://img.b2bpic.net/free-photo/woman-wears-grey-hair-wig_633478-1316.jpg"},
-        {
-          id: "g3",          name: "Signature Styling",          brand: "WOMEN",          price: "Transformation",          rating: 5,
-          reviewCount: "",          imageSrc: "http://img.b2bpic.net/free-photo/professional-hairdresser-sitting-barber-chair-waiting-customer_613910-3902.jpg"},
-        {
-          id: "g4",          name: "Transformation Series",          brand: "TRANSFORMATIONS",          price: "Transformation",          rating: 5,
-          reviewCount: "",          imageSrc: "http://img.b2bpic.net/free-photo/high-angle-barber-s-instruments-shop_23-2149186524.jpg"},
-        {
-          id: "g5",          name: "Modern Cut",          brand: "MEN",          price: "Transformation",          rating: 5,
-          reviewCount: "",          imageSrc: "http://img.b2bpic.net/free-photo/model-career-kit-still-life-top-view_23-2150217977.jpg"},
-        {
-          id: "g6",          name: "Style Revive",          brand: "WOMEN",          price: "Transformation",          rating: 5,
-          reviewCount: "",          imageSrc: "http://img.b2bpic.net/free-photo/woman-drying-hair-hairsalon_1157-27184.jpg"},
+        { id: "g1", name: "Classic Fade", brand: "MEN", price: "Transformation", rating: 5, reviewCount: "", imageSrc: "http://img.b2bpic.net/free-photo/portrait-stylish-male-who-himself-shaving-while-sitting-barber-chair-hairdressing-salon_613910-18649.jpg" },
+        { id: "g2", name: "Balayage", brand: "COLOUR", price: "Transformation", rating: 5, reviewCount: "", imageSrc: "http://img.b2bpic.net/free-photo/woman-wears-grey-hair-wig_633478-1316.jpg" },
+        { id: "g3", name: "Signature Styling", brand: "WOMEN", price: "Transformation", rating: 5, reviewCount: "", imageSrc: "http://img.b2bpic.net/free-photo/professional-hairdresser-sitting-barber-chair-waiting-customer_613910-3902.jpg" },
+        { id: "g4", name: "Transformation Series", brand: "TRANSFORMATIONS", price: "Transformation", rating: 5, reviewCount: "", imageSrc: "http://img.b2bpic.net/free-photo/high-angle-barber-s-instruments-shop_23-2149186524.jpg" },
+        { id: "g5", name: "Modern Cut", brand: "MEN", price: "Transformation", rating: 5, reviewCount: "", imageSrc: "http://img.b2bpic.net/free-photo/model-career-kit-still-life-top-view_23-2150217977.jpg" },
+        { id: "g6", name: "Style Revive", brand: "WOMEN", price: "Transformation", rating: 5, reviewCount: "", imageSrc: "http://img.b2bpic.net/free-photo/woman-drying-hair-hairsalon_1157-27184.jpg" },
       ]}
       title="THE DOC BARNET LOOK"
       description="Real cuts. Real colour. Real transformations."
@@ -179,29 +129,16 @@ export default function LandingPage() {
       textboxLayout="default"
       useInvertedBackground={false}
       testimonials={[
-        {
-          id: "1",          name: "Sarah H.",          role: "Client",          company: "Local Resident",          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/portrait-sexy-handsome-fashion-male-model-man-dressed-elegant-suit-black-studio-lights-background_158538-9659.jpg"},
-        {
-          id: "2",          name: "David L.",          role: "Client",          company: "Businessman",          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/portrait-stylish-woman-posing-fashionable-outfit_23-2149021828.jpg"},
-        {
-          id: "3",          name: "Emily B.",          role: "Client",          company: "Frequent Visitor",          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/professional-barber-working-with-client-hairdressing-salon-styling-beard-with-trimmer_613910-18291.jpg"},
-        {
-          id: "4",          name: "John D.",          role: "Client",          company: "Styling Enthusiast",          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/portrait-man-barbershop-with-classic-styling_618663-34.jpg"},
-        {
-          id: "5",          name: "Clara R.",          role: "Client",          company: "New Guest",          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/two-businessman-discussing-their-chart-coffee-shop_1150-6422.jpg"},
+        { id: "1", name: "Sarah H.", role: "Client", company: "Local Resident", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/portrait-sexy-handsome-fashion-male-model-man-dressed-elegant-suit-black-studio-lights-background_158538-9659.jpg" },
+        { id: "2", name: "David L.", role: "Client", company: "Businessman", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/portrait-stylish-woman-posing-fashionable-outfit_23-2149021828.jpg" },
+        { id: "3", name: "Emily B.", role: "Client", company: "Frequent Visitor", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/professional-barber-working-with-client-hairdressing-salon-styling-beard-with-trimmer_613910-18291.jpg" },
+        { id: "4", name: "John D.", role: "Client", company: "Styling Enthusiast", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/portrait-man-barbershop-with-classic-styling_618663-34.jpg" },
+        { id: "5", name: "Clara R.", role: "Client", company: "New Guest", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/two-businessman-discussing-their-chart-coffee-shop_1150-6422.jpg" },
       ]}
       kpiItems={[
-        {
-          value: "17+",          label: "Years Experience"},
-        {
-          value: "5000+",          label: "Happy Clients"},
-        {
-          value: "100%",          label: "Satisfaction Rate"},
+        { value: "17+", label: "Years Experience" },
+        { value: "5000+", label: "Happy Clients" },
+        { value: "100%", label: "Satisfaction Rate" },
       ]}
       title="WHAT OUR CLIENTS SAY"
       description="We pride ourselves on the highest standards of service and style."
@@ -211,8 +148,7 @@ export default function LandingPage() {
   <div id="offer" data-section="offer">
       <ContactCenter
       useInvertedBackground={false}
-      background={{
-        variant: "gradient-bars"}}
+      background={{ variant: "gradient-bars" }}
       tag="LIMITED OFFER"
       title="20% OFF YOUR FIRST VISIT"
       description="TUSDAY ONLY CODE: DOCBARNET20 "
@@ -224,12 +160,9 @@ export default function LandingPage() {
       textboxLayout="default"
       useInvertedBackground={false}
       faqs={[
-        {
-          id: "f1",          title: "Opening Hours",          content: "Mon-Sat: 9am - 7pm | Sun: 10am - 4pm"},
-        {
-          id: "f2",          title: "Appointments",          content: "01452 224220 / 07495 044457"},
-        {
-          id: "f3",          title: "Location",          content: "Gloucester Quays Designer Outlet"},
+        { id: "f1", title: "Opening Hours", content: "Mon-Sat: 9am - 7pm | Sun: 10am - 4pm" },
+        { id: "f2", title: "Appointments", content: "01452 224220 / 07495 044457" },
+        { id: "f3", title: "Location", content: "Gloucester Quays Designer Outlet" },
       ]}
       imageSrc="http://img.b2bpic.net/free-photo/hairdressing-equipment-white-background_23-2147711627.jpg"
       mediaAnimation="slide-up"
@@ -237,6 +170,9 @@ export default function LandingPage() {
       description="Unit 67, Gloucester Quays Designer Outlet, Gloucester GL1 5SH"
       faqsAnimation="slide-up"
     />
+    <div className="w-content-width mx-auto py-12">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2448.650058869106!2d-2.253018824177209!3d51.85303869007421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4871032a9e3381a7%3A0x67586616428c467a!2sGloucester%20Quays%20Designer%20Outlet!5e0!3m2!1sen!2suk!4v1716382023545!5m2!1sen!2suk" width="100%" height="450" style={{border: 0}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+    </div>
   </div>
 
   <div id="footer" data-section="footer">
@@ -244,42 +180,9 @@ export default function LandingPage() {
       imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/uploaded-1778094604107-kwe3q62f.jpg?_wi=1"
       logoText="DOC BARNET"
       columns={[
-        {
-          title: "Services",          items: [
-            {
-              label: "Gents Hair",              href: "/services"},
-            {
-              label: "Ladies Cut",              href: "/services"},
-            {
-              label: "Beard Grooming",              href: "/services"},
-          ],
-        },
-        {
-          title: "Company",          items: [
-            {
-              label: "About Us",              href: "/#about"},
-            {
-              label: "Contact",              href: "/#contact"},
-            {
-              label: "Book Now",              href: bookingUrl},
-            {
-              label: "Products",              href: "/products"},
-            {
-              label: "Blog",              href: "/blog"},
-            {
-              label: "Franchise",              href: "/franchise"},
-          ],
-        },
-        {
-          title: "Social",          items: [
-            {
-              label: "Instagram",              href: "https://www.instagram.com/docbarnet?igsh=MWMwdHBnamFibXc3Yw%3D%3D&utm_source=qr"},
-            {
-              label: "Facebook",              href: "#"},
-            {
-              label: "Privacy Policy",              href: "#"},
-          ],
-        },
+        { title: "Services", items: [{ label: "Gents Hair", href: "/services" }, { label: "Ladies Cut", href: "/services" }, { label: "Beard Grooming", href: "/services" }] },
+        { title: "Company", items: [{ label: "About Us", href: "/#about" }, { label: "Contact", href: "/#contact" }, { label: "Book Now", href: bookingUrl }, { label: "Products", href: "/products" }, { label: "Blog", href: "/blog" }, { label: "Franchise", href: "/franchise" }] },
+        { title: "Social", items: [{ label: "Instagram", href: "https://www.instagram.com/docbarnet?igsh=MWMwdHBnamFibXc3Yw%3D%3D&utm_source=qr" }, { label: "Facebook", href: "#" }, { label: "Privacy Policy", href: "#" }] },
       ]}
     />
   </div>
