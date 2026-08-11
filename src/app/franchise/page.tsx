@@ -2,21 +2,21 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
-import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
+import NavbarFloatingLogo from '@/components/ui/NavbarFloatingLogo';
 import ContactSplitForm from '@/components/sections/contact/ContactSplitForm';
-import FooterMedia from '@/components/sections/footer/FooterMedia';
+import FooterSimple from '@/components/sections/footer/FooterSimple';
 
 export default function FranchisePage() {
   const bookingUrl = "https://tinyurl.com/2kr8jy37";
 
   const navItems = [
-    { name: "Home", id: "/" },
-    { name: "Services", id: "/services" },
-    { name: "Products", id: "/products" },
-    { name: "Prices", id: "/#pricing" },
-    { name: "Franchise", id: "/franchise" },
-    { name: "Blog", id: "/blog" },
-    { name: "Contact", id: "/#contact" },
+    { name: "Home", href: "/" },
+    { name: "Services", href: "/services" },
+    { name: "Products", href: "/products" },
+    { name: "Prices", href: "/#pricing" },
+    { name: "Franchise", href: "/franchise" },
+    { name: "Blog", href: "/blog" },
+    { name: "Contact", href: "/#contact" },
   ];
 
   const footerColumns = [
@@ -61,11 +61,10 @@ export default function FranchisePage() {
     >
       <ReactLenis root>
         <div id="nav" data-section="nav">
-            <NavbarLayoutFloatingOverlay
+            <NavbarFloatingLogo
             navItems={navItems}
-            brandName="Doc Barnet Grooming Salon"
-            button={{
-                text: "BOOK NOW",                href: bookingUrl}}
+            logoImageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/uploaded-1778094604107-kwe3q62f.jpg"
+            ctaButton={{ text: "BOOK NOW", href: bookingUrl }}
             />
         </div>
 
@@ -90,10 +89,11 @@ export default function FranchisePage() {
         </div>
 
         <div id="footer" data-section="footer">
-            <FooterMedia
-            imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/uploaded-1778094604107-kwe3q62f.jpg?_wi=1"
-            logoText="DOC BARNET"
+            <FooterSimple
+            brand="DOC BARNET"
             columns={footerColumns}
+            copyright="© 2024 Doc Barnet. All rights reserved."
+            links={[]}
             />
         </div>
       </ReactLenis>
