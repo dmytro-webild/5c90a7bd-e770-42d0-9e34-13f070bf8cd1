@@ -1,6 +1,5 @@
 "use client";
 
-import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import ContactCenter from '@/components/sections/contact/ContactCenter';
 import FaqSplitMedia from '@/components/sections/faq/FaqSplitMedia';
@@ -17,18 +16,6 @@ export default function LandingPage() {
   const bookingUrl = "https://tinyurl.com/2kr8jy37";
 
   return (
-    <ThemeProvider
-        defaultButtonVariant="text-shift"
-        defaultTextAnimation="entrance-slide"
-        borderRadius="rounded"
-        contentWidth="mediumLarge"
-        sizing="largeSmallSizeLargeTitles"
-        background="none"
-        cardStyle="outline"
-        primaryButtonStyle="radial-glow"
-        secondaryButtonStyle="glass"
-        headingFontWeight="extrabold"
-    >
       <ReactLenis root>
   <div id="nav" data-section="nav">
       <NavbarLayoutFloatingOverlay
@@ -59,7 +46,7 @@ export default function LandingPage() {
       background={{
         variant: "gradient-bars"}}
       title="Experience Our Full Range of Premium Grooming Services"
-      description="From precision gentlemen's haircuts and elegant ladies' styling to expert beard grooming and rejuvenating facial treatments, discover unparalleled quality and care          at Doc Barnet Grooming Salon."
+      description="From precision gentlemen's haircuts and elegant ladies' styling to expert beard grooming and rejuvenating facial treatments, discover unparalleled quality and care at Doc Barnet Grooming Salon."
       buttons={[
         {
           text: "BOOK NOW",          href: bookingUrl},
@@ -143,8 +130,8 @@ export default function LandingPage() {
       textboxLayout="default"
       useInvertedBackground={false}
       testimonials={[
-        { id: "1", name: "Sarah H.", role: "Client", company: "Local Resident", rating: 5, avatarImageSrc: "http://img.b2bpic.net/free-photo/portrait-sexy-handsome-fashion-male-model-man-dressed-elegant-suit-black-studio-lights-background_158538-9659.jpg", date: "2023" },
-        { id: "2", name: "David L.", role: "Client", company: "Businessman", rating: 5, avatarImageSrc: "http://img.b2bpic.net/free-photo/portrait-stylish-woman-posing-fashionable-outfit_23-2149021828.jpg", date: "2023" }
+        { id: "1", name: "Sarah H.", role: "Client", company: "Local Resident", rating: 5, date: "2023" },
+        { id: "2", name: "David L.", role: "Client", company: "Businessman", rating: 5, date: "2023" }
       ]}
       kpiItems={[
         { value: "17+", label: "Years Experience"},
@@ -217,6 +204,5 @@ export default function LandingPage() {
     />
   </div>
       </ReactLenis>
-    </ThemeProvider>
   );
 }
