@@ -11,7 +11,8 @@ import InlineImageSplitTextAbout from '@/components/sections/about/InlineImageSp
 import NavbarFloatingLogo from '@/components/ui/NavbarFloatingLogo';
 import PricingCardTwo from '@/components/sections/pricing/PricingCardTwo';
 import ProductCardTwo from '@/components/sections/product/ProductCardTwo';
-import TestimonialCardSixteen from '@/components/sections/testimonial/TestimonialCardSixteen';
+import TestimonialDetailedCardsHighlight from '@/components/sections/testimonial/TestimonialDetailedCardsHighlight';
+import FooterMinimal from '@/components/sections/footer/FooterMinimal';
 
 export default function LandingPage() {
   const bookingUrl = "https://tinyurl.com/2kr8jy37";
@@ -124,25 +125,15 @@ export default function LandingPage() {
   </div>
 
   <div id="reviews" data-section="reviews">
-      <TestimonialCardSixteen
-      animationType="slide-up"
-      textboxLayout="default"
-      useInvertedBackground={false}
+      <TestimonialDetailedCardsHighlight
+      title="Google Reviews"
+      titleHighlight="Top Rated"
+      description="See what our customers have to say about their experience."
       testimonials={[
-        { id: "1", name: "Sarah H.", role: "Client", company: "Local Resident", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/portrait-sexy-handsome-fashion-male-model-man-dressed-elegant-suit-black-studio-lights-background_158538-9659.jpg" },
-        { id: "2", name: "David L.", role: "Client", company: "Businessman", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/portrait-stylish-woman-posing-fashionable-outfit_23-2149021828.jpg" },
-        { id: "3", name: "Emily B.", role: "Client", company: "Frequent Visitor", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/professional-barber-working-with-client-hairdressing-salon-styling-beard-with-trimmer_613910-18291.jpg" },
-        { id: "4", name: "John D.", role: "Client", company: "Styling Enthusiast", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/portrait-man-barbershop-with-classic-styling_618663-34.jpg" },
-        { id: "5", name: "Clara R.", role: "Client", company: "New Guest", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/two-businessman-discussing-their-chart-coffee-shop_1150-6422.jpg" },
+        { title: "Best experience", quote: "Amazing haircut and friendly staff!", name: "Sarah H.", role: "Local Resident", imageSrc: "http://img.b2bpic.net/free-photo/portrait-sexy-handsome-fashion-male-model-man-dressed-elegant-suit-black-studio-lights-background_158538-9659.jpg" },
+        { title: "Highly recommended", quote: "Top tier service and quality cuts.", name: "David L.", role: "Businessman", imageSrc: "http://img.b2bpic.net/free-photo/portrait-stylish-woman-posing-fashionable-outfit_23-2149021828.jpg" }
       ]}
-      kpiItems={[
-        { value: "17+", label: "Years Experience" },
-        { value: "5000+", label: "Happy Clients" },
-        { value: "100%", label: "Satisfaction Rate" },
-      ]}
-      title="WHAT OUR CLIENTS SAY"
-      description="We pride ourselves on the highest standards of service and style."
-    />
+      />
   </div>
 
   <div id="offer" data-section="offer">
@@ -176,15 +167,10 @@ export default function LandingPage() {
   </div>
 
   <div id="footer" data-section="footer">
-      <FooterSimple
+      <FooterMinimal
       brand="DOC BARNET"
       copyright="© 2024 Doc Barnet. All rights reserved."
-      links={[]}
-      columns={[
-        { title: "Services", items: [{ label: "Gents Hair", href: "/services" }, { label: "Ladies Cut", href: "/services" }, { label: "Beard Grooming", href: "/services" }] },
-        { title: "Company", items: [{ label: "About Us", href: "/#about" }, { label: "Contact", href: "/#contact" }, { label: "Book Now", href: bookingUrl }, { label: "Products", href: "/products" }, { label: "Blog", href: "/blog" }, { label: "Franchise", href: "/franchise" }] },
-        { title: "Social", items: [{ label: "Instagram", href: "https://www.instagram.com/docbarnet?igsh=MWMwdHBnamFibXc3Yw%3D%3D&utm_source=qr" }, { label: "Facebook", href: "#" }, { label: "Privacy Policy", href: "#" }] },
-      ]}
+      socialLinks={[{ icon: "Instagram", href: "#" }, { icon: "Facebook", href: "#" }]}
     />
   </div>
       </ReactLenis>
