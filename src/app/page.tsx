@@ -5,10 +5,10 @@ import ReactLenis from "lenis/react";
 import ContactCenter from '@/components/sections/contact/ContactCenter';
 import FaqSplitMedia from '@/components/sections/faq/FaqSplitMedia';
 import FeatureCardOne from '@/components/sections/feature/FeatureCardOne';
-import FooterMedia from '@/components/sections/footer/FooterMedia';
+import FooterSimple from '@/components/sections/footer/FooterSimple';
 import HeroBillboardScroll from '@/components/sections/hero/HeroBillboardScroll';
 import InlineImageSplitTextAbout from '@/components/sections/about/InlineImageSplitTextAbout';
-import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
+import NavbarFloatingLogo from '@/components/ui/NavbarFloatingLogo';
 import PricingCardTwo from '@/components/sections/pricing/PricingCardTwo';
 import ProductCardTwo from '@/components/sections/product/ProductCardTwo';
 import TestimonialCardSixteen from '@/components/sections/testimonial/TestimonialCardSixteen';
@@ -31,18 +31,18 @@ export default function LandingPage() {
     >
       <ReactLenis root>
   <div id="nav" data-section="nav">
-      <NavbarLayoutFloatingOverlay
+      <NavbarFloatingLogo
       navItems={[
-        { name: "Home", id: "/" },
-        { name: "Services", id: "/services" },
-        { name: "Products", id: "/products" },
-        { name: "Prices", id: "/#pricing" },
-        { name: "Franchise", id: "/franchise" },
-        { name: "Blog", id: "/blog" },
-        { name: "Contact", id: "/#contact" }
+        { name: "Home", href: "/" },
+        { name: "Services", href: "/services" },
+        { name: "Products", href: "/products" },
+        { name: "Prices", href: "/#pricing" },
+        { name: "Franchise", href: "/franchise" },
+        { name: "Blog", href: "/blog" },
+        { name: "Contact", href: "/#contact" }
       ]}
-      brandName="Doc Barnet Grooming Salon"
-      button={{ text: "BOOK NOW", href: bookingUrl }}
+      logoImageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/uploaded-1778094604107-kwe3q62f.jpg"
+      ctaButton={{ text: "BOOK NOW", href: bookingUrl }}
     />
   </div>
 
@@ -176,9 +176,10 @@ export default function LandingPage() {
   </div>
 
   <div id="footer" data-section="footer">
-      <FooterMedia
-      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/uploaded-1778094604107-kwe3q62f.jpg?_wi=1"
-      logoText="DOC BARNET"
+      <FooterSimple
+      brand="DOC BARNET"
+      copyright="© 2024 Doc Barnet. All rights reserved."
+      links={[]}
       columns={[
         { title: "Services", items: [{ label: "Gents Hair", href: "/services" }, { label: "Ladies Cut", href: "/services" }, { label: "Beard Grooming", href: "/services" }] },
         { title: "Company", items: [{ label: "About Us", href: "/#about" }, { label: "Contact", href: "/#contact" }, { label: "Book Now", href: bookingUrl }, { label: "Products", href: "/products" }, { label: "Blog", href: "/blog" }, { label: "Franchise", href: "/franchise" }] },

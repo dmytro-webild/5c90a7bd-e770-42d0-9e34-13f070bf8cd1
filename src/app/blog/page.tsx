@@ -4,8 +4,8 @@ import ReactLenis from "lenis/react";
 import BlogCardOne from '@/components/sections/blog/BlogCardOne';
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import { useBlogPosts } from "@/hooks/useBlogPosts";
-import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
-import FooterMedia from '@/components/sections/footer/FooterMedia';
+import NavbarFloatingLogo from '@/components/ui/NavbarFloatingLogo';
+import FooterSimple from '@/components/sections/footer/FooterSimple';
 
 const bookingUrl = "https://tinyurl.com/2kr8jy37";
 
@@ -13,13 +13,13 @@ export default function BlogPage() {
     const { posts, isLoading } = useBlogPosts();
 
     const navItems = [
-      { name: "Home", id: "/" },
-      { name: "Services", id: "/services" },
-      { name: "Products", id: "/products" },
-      { name: "Prices", id: "/#pricing" },
-      { name: "Franchise", id: "/franchise" },
-      { name: "Blog", id: "/blog" },
-      { name: "Contact", id: "/#contact" },
+      { name: "Home", href: "/" },
+      { name: "Services", href: "/services" },
+      { name: "Products", href: "/products" },
+      { name: "Prices", href: "/#pricing" },
+      { name: "Franchise", href: "/franchise" },
+      { name: "Blog", href: "/blog" },
+      { name: "Contact", href: "/#contact" },
     ];
 
     const footerColumns = [
@@ -62,11 +62,9 @@ export default function BlogPage() {
         headingFontWeight="extrabold">
             <ReactLenis root>
                 <div id="nav" data-section="nav">
-
-                    <NavbarLayoutFloatingOverlay navItems={navItems}
-      brandName="Doc Barnet Grooming Salon"
-      button={{
-        text: "BOOK NOW",        href: bookingUrl}} />
+                    <NavbarFloatingLogo navItems={navItems}
+                        logoImageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/uploaded-1778094604107-kwe3q62f.jpg" 
+                        ctaButton={{ text: "BOOK NOW", href: bookingUrl }} />
                 </div>
 
                     {isLoading ? (
@@ -88,10 +86,12 @@ export default function BlogPage() {
                     )}
 
                     <div id="footer" data-section="footer">
-
-                        <FooterMedia imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/uploaded-1778094604107-kwe3q62f.jpg?_wi=1"
-      logoText="DOC BARNET"
-      columns={footerColumns} />
+                        <FooterSimple
+                          brand="DOC BARNET"
+                          columns={footerColumns}
+                          copyright="© 2024 Doc Barnet. All rights reserved."
+                          links={[]}
+                        />
                     </div>
             </ReactLenis>
         </ThemeProvider>
