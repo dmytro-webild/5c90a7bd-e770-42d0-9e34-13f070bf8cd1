@@ -150,26 +150,26 @@ export default function LandingPage() {
       useInvertedBackground={false}
       products={[
         {
-          id: "g1",          name: "Classic Fade",          brand: "Styling",          price: "Transformation",          rating: 5,
-          reviewCount: "2024",          imageSrc: "http://img.b2bpic.net/free-photo/portrait-stylish-male-who-himself-shaving-while-sitting-barber-chair-hairdressing-salon_613910-18649.jpg"},
+          id: "g1",          name: "Classic Fade",          brand: "MEN",          price: "Transformation",          rating: 5,
+          reviewCount: "",          imageSrc: "http://img.b2bpic.net/free-photo/portrait-stylish-male-who-himself-shaving-while-sitting-barber-chair-hairdressing-salon_613910-18649.jpg"},
         {
-          id: "g2",          name: "Balayage",          brand: "Colour",          price: "Transformation",          rating: 5,
-          reviewCount: "2024",          imageSrc: "http://img.b2bpic.net/free-photo/woman-wears-grey-hair-wig_633478-1316.jpg"},
+          id: "g2",          name: "Balayage",          brand: "COLOUR",          price: "Transformation",          rating: 5,
+          reviewCount: "",          imageSrc: "http://img.b2bpic.net/free-photo/woman-wears-grey-hair-wig_633478-1316.jpg"},
         {
-          id: "g3",          name: "Salon Interior",          brand: "Style",          price: "Luxury Space",          rating: 5,
-          reviewCount: "2024",          imageSrc: "http://img.b2bpic.net/free-photo/professional-hairdresser-sitting-barber-chair-waiting-customer_613910-3902.jpg"},
+          id: "g3",          name: "Signature Styling",          brand: "WOMEN",          price: "Transformation",          rating: 5,
+          reviewCount: "",          imageSrc: "http://img.b2bpic.net/free-photo/professional-hairdresser-sitting-barber-chair-waiting-customer_613910-3902.jpg"},
         {
-          id: "g4",          name: "Lighting Design",          brand: "Design",          price: "Atmosphere",          rating: 5,
-          reviewCount: "2024",          imageSrc: "http://img.b2bpic.net/free-photo/high-angle-barber-s-instruments-shop_23-2149186524.jpg"},
+          id: "g4",          name: "Transformation Series",          brand: "TRANSFORMATIONS",          price: "Transformation",          rating: 5,
+          reviewCount: "",          imageSrc: "http://img.b2bpic.net/free-photo/high-angle-barber-s-instruments-shop_23-2149186524.jpg"},
         {
-          id: "g5",          name: "Tools",          brand: "Precision",          price: "Detail",          rating: 5,
-          reviewCount: "2024",          imageSrc: "http://img.b2bpic.net/free-photo/model-career-kit-still-life-top-view_23-2150217977.jpg"},
+          id: "g5",          name: "Modern Cut",          brand: "MEN",          price: "Transformation",          rating: 5,
+          reviewCount: "",          imageSrc: "http://img.b2bpic.net/free-photo/model-career-kit-still-life-top-view_23-2150217977.jpg"},
         {
-          id: "g6",          name: "Blow Dry",          brand: "Styling",          price: "Treatment",          rating: 5,
-          reviewCount: "2024",          imageSrc: "http://img.b2bpic.net/free-photo/woman-drying-hair-hairsalon_1157-27184.jpg"},
+          id: "g6",          name: "Style Revive",          brand: "WOMEN",          price: "Transformation",          rating: 5,
+          reviewCount: "",          imageSrc: "http://img.b2bpic.net/free-photo/woman-drying-hair-hairsalon_1157-27184.jpg"},
       ]}
-      title="OUR WORK"
-      description="Visual highlights from our salon floor."
+      title="THE DOC BARNET LOOK"
+      description="Real cuts. Real colour. Real transformations."
     />
   </div>
 
