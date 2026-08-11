@@ -5,14 +5,14 @@ import ReactLenis from "lenis/react";
 import ContactCenter from '@/components/sections/contact/ContactCenter';
 import FaqSplitMedia from '@/components/sections/faq/FaqSplitMedia';
 import FeatureCardOne from '@/components/sections/feature/FeatureCardOne';
-import FooterSimple from '@/components/sections/footer/FooterSimple';
+import FooterMinimal from '@/components/sections/footer/FooterMinimal';
 import HeroBillboardScroll from '@/components/sections/hero/HeroBillboardScroll';
+import SocialProofMarquee from '@/components/sections/social-proof/SocialProofMarquee';
 import InlineImageSplitTextAbout from '@/components/sections/about/InlineImageSplitTextAbout';
 import NavbarFloatingLogo from '@/components/ui/NavbarFloatingLogo';
 import PricingCardTwo from '@/components/sections/pricing/PricingCardTwo';
 import ProductCardTwo from '@/components/sections/product/ProductCardTwo';
 import TestimonialDetailedCardsHighlight from '@/components/sections/testimonial/TestimonialDetailedCardsHighlight';
-import FooterMinimal from '@/components/sections/footer/FooterMinimal';
 
 export default function LandingPage() {
   const bookingUrl = "https://tinyurl.com/2kr8jy37";
@@ -58,6 +58,14 @@ export default function LandingPage() {
       ]}
       imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/uploaded-1778093237434-05qgab2c.jpg"
       imageAlt="Doc Barnet Luxury Salon"
+    />
+  </div>
+
+  <div id="trust-badges" data-section="trust-badges">
+    <SocialProofMarquee
+      title="Trusted by Our Community"
+      names={["Award Winning Salon", "Local Business of the Year", "Highly Recommended on Google", "Top Rated Stylists", "Community Favorite"]
+      }
     />
   </div>
 
