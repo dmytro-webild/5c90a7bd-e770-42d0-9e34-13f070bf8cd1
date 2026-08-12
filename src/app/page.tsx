@@ -55,7 +55,7 @@ export default function LandingPage() {
       buttons={[
         { text: "BOOK NOW", href: bookingUrl },
       ]}
-      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/uploaded-1778093237434-05qgab2c.jpg"
+      imageSrc="https://storage.googleapis.com/webild/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/uploaded-1786569372988-ut8e64n7.jpg"
       imageAlt="Doc Barnet Luxury Salon"
     />
   </div>
