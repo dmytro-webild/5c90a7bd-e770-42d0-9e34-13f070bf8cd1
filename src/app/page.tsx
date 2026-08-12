@@ -13,6 +13,7 @@ import NavbarFloatingLogo from '@/components/ui/NavbarFloatingLogo';
 import PricingCardTwo from '@/components/sections/pricing/PricingCardTwo';
 import ProductCardTwo from '@/components/sections/product/ProductCardTwo';
 import TestimonialDetailedCardsHighlight from '@/components/sections/testimonial/TestimonialDetailedCardsHighlight';
+import { Star } from "lucide-react";
 
 export default function LandingPage() {
   const bookingUrl = "https://tinyurl.com/2kr8jy37";
@@ -48,6 +49,18 @@ export default function LandingPage() {
   </div>
 
   <div id="hero" data-section="hero">
+      <div className="w-content-width mx-auto flex justify-center py-6">
+        <div className="flex items-center gap-2 bg-background-accent/10 px-4 py-2 rounded-full border border-accent/20">
+            <div className="flex text-accent">
+                <Star className="w-4 h-4 fill-current" />
+                <Star className="w-4 h-4 fill-current" />
+                <Star className="w-4 h-4 fill-current" />
+                <Star className="w-4 h-4 fill-current" />
+                <Star className="w-4 h-4 fill-current" />
+            </div>
+            <span className="text-sm font-semibold text-foreground">Rated Excellent on Google</span>
+        </div>
+      </div>
       <HeroBillboardScroll
       background={{ variant: "gradient-bars" }}
       title="Experience Our Full Range of Premium Grooming Services"
