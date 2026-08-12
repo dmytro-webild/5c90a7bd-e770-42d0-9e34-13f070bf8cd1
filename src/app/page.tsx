@@ -34,7 +34,6 @@ export default function LandingPage() {
         <HeroBillboardScroll
           title="Experience Our Full Range of Premium Grooming Services"
           description="From precision gentlemen's haircuts and elegant ladies' styling to expert beard grooming and rejuvenating facial treatments, discover unparalleled quality and care at Doc Barnet Grooming Salon."
-          primaryButton={{ text: "BOOK NOW", href: bookingUrl }}
           imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/uploaded-1778093237434-05qgab2c.jpg"
           textAnimation="slide-up"
         />
