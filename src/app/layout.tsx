@@ -7,6 +7,7 @@ import { ServiceWrapper } from "@/components/ServiceWrapper";
 import { getVisualEditScript } from "@/utils/visual-edit-script";
 import { Public_Sans } from "next/font/google";
 import { Roboto } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 
 
 
@@ -23,10 +24,14 @@ export const metadata: Metadata = {
 
 
 
-const roboto = Roboto({
-  variable: "--font-roboto",
+
+const dmSans = DM_Sans({
+  variable: "--font-dm-sans",
   subsets: ["latin"],
-  weight: ["100", "300", "400", "500", "700", "900"],
+});
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
 });
 
 export default function RootLayout({
@@ -37,7 +42,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <ServiceWrapper>
-        <body className={`${roboto.variable} antialiased`}>
+        <body className={`${dmSans.variable} ${inter.variable} antialiased`}>
           
           {children}
           <script
