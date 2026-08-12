@@ -1,6 +1,5 @@
 "use client";
 
-import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import ContactCenter from '@/components/sections/contact/ContactCenter';
 import FaqSplitMedia from '@/components/sections/faq/FaqSplitMedia';
@@ -19,18 +18,6 @@ export default function LandingPage() {
   const bookingUrl = "https://tinyurl.com/2kr8jy37";
 
   return (
-    <ThemeProvider
-        defaultButtonVariant="text-shift"
-        defaultTextAnimation="entrance-slide"
-        borderRadius="rounded"
-        contentWidth="mediumLarge"
-        sizing="largeSmallSizeLargeTitles"
-        background="none"
-        cardStyle="outline"
-        primaryButtonStyle="radial-glow"
-        secondaryButtonStyle="glass"
-        headingFontWeight="extrabold"
-    >
       <ReactLenis root>
   <div id="nav" data-section="nav">
       <NavbarFloatingLogo
@@ -195,6 +182,5 @@ export default function LandingPage() {
     />
   </div>
       </ReactLenis>
-    </ThemeProvider>
   );
 }
