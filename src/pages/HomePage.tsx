@@ -1,7 +1,6 @@
 "use client";
 
 import ReactLenis from "lenis/react";
-import { Star } from "lucide-react";
 import NavbarInline from "@/components/ui/NavbarInline";
 import HeroBillboard from "@/components/sections/hero/HeroBillboard";
 import AboutParallax from "@/components/sections/about/AboutParallax";
@@ -31,8 +30,6 @@ export default function LandingPage() {
           tag="Welcome to Excellence"
           title="Experience Our Full Range of Premium Grooming Services"
           description="From precision haircuts to expert beard grooming and rejuvenating treatments."
-          primaryButton={{ text: "Book Now", href: "#contact" }}
-          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/uploaded-1778093237434-05qgab2c.jpg"
           textAnimation="slide-up"
         />
       </div>
@@ -41,7 +38,6 @@ export default function LandingPage() {
           tag="Our Story"
           title="The Doc Barnet Experience"
           description="We combine traditional barbering with modern styling techniques for a bespoke grooming experience."
-          frontImageSrc="http://img.b2bpic.net/free-photo/barber-applying-cream-clients-beard_107420-94778.jpg"
           textAnimation="slide-up"
         />
       </div>
