@@ -103,9 +103,9 @@ export default function LandingPage() {
       textboxLayout="default"
       useInvertedBackground={false}
       plans={[
-        { id: "p1", badge: "Most Popular", price: "£19.99", subtitle: "Premium Haircut & Styling", buttons: [{ text: "Book Now", href: bookingUrl }], features: ["Consultation", "Precision Cut", "Style Advice", "Finish"] },
-        { id: "p2", badge: "Essential", price: "£45", subtitle: "Cut, Wash & Blow Dry", buttons: [{ text: "Book Now", href: bookingUrl }], features: ["Head Massage", "Professional Cut", "Styling"] },
-        { id: "p3", badge: "Luxury", price: "£85", subtitle: "Balayage & Treatment", buttons: [{ text: "Book Now", href: bookingUrl }], features: ["Consultation", "Expert Colour", "Treatment", "Finish"] },
+        { id: "p1", badge: "Most Popular", price: "£27.99", subtitle: "Premium Haircut & Styling", buttons: [{ text: "Book Now", href: bookingUrl }], features: ["Consultation", "Precision Cut", "Style Advice", "Finish"] },
+        { id: "p2", badge: "Essential", price: "£63", subtitle: "Cut, Wash & Blow Dry", buttons: [{ text: "Book Now", href: bookingUrl }], features: ["Head Massage", "Professional Cut", "Styling"] },
+        { id: "p3", badge: "Luxury", price: "£119", subtitle: "Balayage & Treatment", buttons: [{ text: "Book Now", href: bookingUrl }], features: ["Consultation", "Expert Colour", "Treatment", "Finish"] },
       ]}
       title="PRICE LIST"
       description="Transparent pricing for world-class grooming."
