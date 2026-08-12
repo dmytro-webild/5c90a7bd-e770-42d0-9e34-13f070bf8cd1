@@ -86,7 +86,7 @@ export default function LandingPage() {
       useInvertedBackground={false}
       heading={[
         { type: "text", content: "THE DOC BARNET EXPERIENCE" },
-        { type: "image", src: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/uploaded-1779126300405-salon-interior-doc-barnet.jpg", alt: "Doc Barnet Salon Interior" },
+        { type: "image", src: "http://img.b2bpic.net/free-photo/barber-applying-cream-clients-beard_107420-94778.jpg", alt: "Barber at work" },
       ]}
       buttons={[
         { text: "DISCOVER MORE", href: "#services" },
@@ -101,12 +101,15 @@ export default function LandingPage() {
       gridVariant="two-columns-alternating-heights"
       useInvertedBackground={false}
       features={[
-        { title: "Gents Haircuts", description: "Precision styling tailored to your unique look.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/uploaded-1779126450123-gents-fade.jpg", imageAlt: "Precision Gents Haircut" },
-        { title: "Ladies Styling", description: "Wash, cut, and blow dry services for sophisticated style.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/uploaded-1779126520456-ladies-blowdry.jpg", imageAlt: "Professional Ladies Styling" },
-        { title: "Beard & Facial", description: "Expert beard shaping, hot towel shaves, and facial treatments.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/uploaded-1779126610789-beard-trim.jpg", imageAlt: "Expert Beard Treatment" },
+        { title: "GENTS: Haircuts, Fades, Beard Grooming", description: "Professional barbering, precision skin fades, and expert beard detailing from £20.", imageSrc: "http://img.b2bpic.net/free-photo/studio-portrait-fashionable-modern-male-grey-t-shirt_613910-532.jpg", imageAlt: "Gents Services" },
+        { title: "LADIES: Cuts, Blow Dry, Styling", description: "Bespoke haircuts, restyles, and luxury wash & blow dry treatments from £35.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/tmp/hairstyle-holding-hair-drayer-1779125588683-ef4b646b.png", imageAlt: "Ladies Services" },
+        { title: "COLOUR: Highlights, Balayage, Toner", description: "Expert colouring services, including balayage and ombre, tailored for you from £65.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/uploaded-1779125338765-fdbqo198.jpg", imageAlt: "Colour Services" },
+        { title: "GROOMING: Facials, Waxing, Threading", description: "Revitalising facials and precision grooming treatments to look your best from £15.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/uploaded-1779125338765-fdbqo198.jpg", imageAlt: "Grooming Services" },
       ]}
-      title="PREMIUM SERVICES"
-      description="Comprehensive grooming and hair solutions for gentlemen and ladies."
+      primaryButton={{ text: "VIEW ALL SERVICES & PRICES", href: "#pricing" }}
+      secondaryButton={{ text: "BOOK NOW", href: bookingUrl }}
+      title="OUR SERVICES"
+      description="Tailored grooming and styling solutions categorized for your convenience."
     />
   </div>
 
@@ -116,12 +119,12 @@ export default function LandingPage() {
       textboxLayout="default"
       useInvertedBackground={false}
       plans={[
-        { id: "p1", badge: "Most Popular", price: "£19.99", subtitle: "Premium Haircut & Styling", buttons: [{ text: "Book Now", href: bookingUrl }], features: ["Consultation", "Precision Cut", "Style Advice", "Finish"] },
-        { id: "p2", badge: "Essential", price: "£45", subtitle: "Cut, Wash & Blow Dry", buttons: [{ text: "Book Now", href: bookingUrl }], features: ["Head Massage", "Professional Cut", "Styling"] },
-        { id: "p3", badge: "Luxury", price: "£85", subtitle: "Balayage & Treatment", buttons: [{ text: "Book Now", href: bookingUrl }], features: ["Consultation", "Expert Colour", "Treatment", "Finish"] },
+        { id: "p1", badge: "Gents", price: "from £20", subtitle: "Precision & Grooming", buttons: [{ text: "Book Now", href: bookingUrl }], features: ["Haircuts", "Skin Fades", "Beard Grooming", "Hot Shaves"] },
+        { id: "p2", badge: "Ladies", price: "from £35", subtitle: "Styling & Care", buttons: [{ text: "Book Now", href: bookingUrl }], features: ["Wash & Blow Dry", "Restyles", "Advanced Styling"] },
+        { id: "p3", badge: "Colour", price: "from £65", subtitle: "Premium Colour", buttons: [{ text: "Book Now", href: bookingUrl }], features: ["Highlights", "Balayage", "Ombre", "Toner"] },
       ]}
       title="PRICE LIST"
-      description="Transparent pricing for world-class grooming."
+      description="Transparent pricing for our most popular services."
     />
   </div>
 
@@ -132,12 +135,12 @@ export default function LandingPage() {
       gridVariant="four-items-2x2-equal-grid"
       useInvertedBackground={false}
       products={[
-        { id: "g1", name: "Classic Fade", brand: "MEN", price: "Transformation", rating: 5, reviewCount: "", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/uploaded-1779126800111-client-work-1.jpg" },
-        { id: "g2", name: "Balayage", brand: "COLOUR", price: "Transformation", rating: 5, reviewCount: "", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/uploaded-1779126850222-client-work-2.jpg" },
-        { id: "g3", name: "Signature Styling", brand: "WOMEN", price: "Transformation", rating: 5, reviewCount: "", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/uploaded-1779126900333-client-work-3.jpg" },
-        { id: "g4", name: "Transformation", brand: "TRANSFORMATIONS", price: "Transformation", rating: 5, reviewCount: "", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/uploaded-1779126950444-client-work-4.jpg" },
-        { id: "g5", name: "Sharp Detail", brand: "MEN", price: "Transformation", rating: 5, reviewCount: "", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/uploaded-1779127000555-client-work-5.jpg" },
-        { id: "g6", name: "Style Revive", brand: "WOMEN", price: "Transformation", rating: 5, reviewCount: "", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/uploaded-1779127050666-client-work-6.jpg" },
+        { id: "g1", name: "Classic Fade", brand: "MEN", price: "Transformation", rating: 5, reviewCount: "", imageSrc: "http://img.b2bpic.net/free-photo/portrait-stylish-male-who-himself-shaving-while-sitting-barber-chair-hairdressing-salon_613910-18649.jpg" },
+        { id: "g2", name: "Balayage", brand: "COLOUR", price: "Transformation", rating: 5, reviewCount: "", imageSrc: "http://img.b2bpic.net/free-photo/woman-wears-grey-hair-wig_633478-1316.jpg" },
+        { id: "g3", name: "Signature Styling", brand: "WOMEN", price: "Transformation", rating: 5, reviewCount: "", imageSrc: "http://img.b2bpic.net/free-photo/professional-hairdresser-sitting-barber-chair-waiting-customer_613910-3902.jpg" },
+        { id: "g4", name: "Transformation Series", brand: "TRANSFORMATIONS", price: "Transformation", rating: 5, reviewCount: "", imageSrc: "http://img.b2bpic.net/free-photo/high-angle-barber-s-instruments-shop_23-2149186524.jpg" },
+        { id: "g5", name: "Modern Cut", brand: "MEN", price: "Transformation", rating: 5, reviewCount: "", imageSrc: "http://img.b2bpic.net/free-photo/model-career-kit-still-life-top-view_23-2150217977.jpg" },
+        { id: "g6", name: "Style Revive", brand: "WOMEN", price: "Transformation", rating: 5, reviewCount: "", imageSrc: "http://img.b2bpic.net/free-photo/woman-drying-hair-hairsalon_1157-27184.jpg" },
       ]}
       title="THE DOC BARNET LOOK"
       description="Real cuts. Real colour. Real transformations."
@@ -150,8 +153,8 @@ export default function LandingPage() {
       titleHighlight="Top Rated"
       description="See what our customers have to say about their experience."
       testimonials={[
-        { title: "Best experience", quote: "Amazing haircut and friendly staff!", name: "Sarah H.", role: "Local Resident", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/uploaded-1779127200777-client-testimonial-1.jpg" },
-        { title: "Highly recommended", quote: "Top tier service and quality cuts.", name: "David L.", role: "Businessman", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/uploaded-1779127250888-client-testimonial-2.jpg" }
+        { title: "Best experience", quote: "Amazing haircut and friendly staff!", name: "Sarah H.", role: "Local Resident", imageSrc: "http://img.b2bpic.net/free-photo/portrait-sexy-handsome-fashion-male-model-man-dressed-elegant-suit-black-studio-lights-background_158538-9659.jpg" },
+        { title: "Highly recommended", quote: "Top tier service and quality cuts.", name: "David L.", role: "Businessman", imageSrc: "http://img.b2bpic.net/free-photo/portrait-stylish-woman-posing-fashionable-outfit_23-2149021828.jpg" }
       ]}
       />
   </div>
@@ -175,7 +178,7 @@ export default function LandingPage() {
         { id: "f2", title: "Appointments", content: "01452 224220 / 07495 044457" },
         { id: "f3", title: "Location", content: "Gloucester Quays Designer Outlet" },
       ]}
-      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/uploaded-1779127500999-salon-exterior.jpg"
+      imageSrc="http://img.b2bpic.net/free-photo/hairdressing-equipment-white-background_23-2147711627.jpg"
       mediaAnimation="slide-up"
       title="VISIT US"
       description="Unit 67, Gloucester Quays Designer Outlet, Gloucester GL1 5SH"
