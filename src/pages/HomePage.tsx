@@ -106,8 +106,6 @@ export default function LandingPage() {
         { title: "COLOUR: Highlights, Balayage, Toner", description: "Expert colouring services, including balayage and ombre, tailored for you from £65.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/uploaded-1779125338765-fdbqo198.jpg", imageAlt: "Colour Services" },
         { title: "GROOMING: Facials, Waxing, Threading", description: "Revitalising facials and precision grooming treatments to look your best from £15.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DMGxfgFdRWLXzYqe2HfYt6JE4x/uploaded-1779125338765-fdbqo198.jpg", imageAlt: "Grooming Services" },
       ]}
-      primaryButton={{ text: "VIEW ALL SERVICES & PRICES", href: "#pricing" }}
-      secondaryButton={{ text: "BOOK NOW", href: bookingUrl }}
       title="OUR SERVICES"
       description="Tailored grooming and styling solutions categorized for your convenience."
     />
